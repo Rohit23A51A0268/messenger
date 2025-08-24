@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messenger</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
+</head>
+<body>
+
+  <!-- Login Screen -->
+  <section id="loginCard" class="card">
+    <h1>Secure Login</h1>
+    <form id="loginForm">
+      <input id="username" type="text" placeholder="Username" required>
+      <input id="password" type="password" placeholder="Password" required>
+      <button type="submit" class="btn">Login</button>
+      <p id="loginError" class="error"></p>
+    </form>
+  </section>
+
+  <!-- Chat Screen -->
+  <section id="chatSection" class="hidden">
+    <header class="chat-header">
+      <div class="peer-info">
+        <div class="avatar" id="peerAvatar">👤</div>
+        <div>
+          <div id="peerName">Waiting...</div>
+          <div id="statusDot">Offline</div>
+        </div>
+      </div>
+    </header>
+
+    <main id="messages" class="messages"></main>
+
+    <footer class="composer">
+      <input id="textInput" type="text" placeholder="Type a message">
+      <input id="fileInput" type="file" hidden>
+      <button id="fileBtn">📎</button>
+      <button id="voiceBtn">🎤</button>
+      <button id="sendBtn">➤</button>
+    </footer>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
