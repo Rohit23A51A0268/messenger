@@ -1,5 +1,5 @@
 const VALID_USERS = ["Ayswarya", "Rohit"];
-const PASSWORD = "ISU#Kothi";
+const PASSWORD = "ISUKOTHI";
 
 const loginCard = document.getElementById("loginCard");
 const chatSection = document.getElementById("chatSection");
