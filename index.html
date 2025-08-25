@@ -3,18 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Messenger</title>
+  <title>Friendship Messenger 💞</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Google Font for cursive style -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:ital,wght@1,500&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
 </head>
 <body>
 
   <!-- Login Screen -->
-  <section id="loginCard" class="card">
-    <h1>Secure Login</h1>
+  <section id="loginCard" class="card glass">
+    <h1>💌 Friendship Chat 💌</h1>
     <form id="loginForm">
-      <input id="username" type="text" placeholder="Username" required>
-      <input id="password" type="password" placeholder="Password" required>
+      <div class="place">
+        <input id="username" type="text" placeholder="Enter Username" required>
+      <input id="password" type="password" placeholder="Enter Password" required>
+      </div>
       <button type="submit" class="btn">Login</button>
       <p id="loginError" class="error"></p>
     </form>
@@ -22,9 +26,9 @@
 
   <!-- Chat Screen -->
   <section id="chatSection" class="hidden">
-    <header class="chat-header">
+    <header class="chat-header glass">
       <div class="peer-info">
-        <div class="avatar" id="peerAvatar">👤</div>
+        <div class="avatar" id="peerAvatar">🌸</div>
         <div>
           <div id="peerName">Waiting...</div>
           <div id="statusDot">Offline</div>
@@ -32,15 +36,13 @@
       </div>
     </header>
 
-    <main id="messages" class="messages"></main>
+    <main id="messages" class="messages glass"></main>
 
-    <footer class="composer">
-      <input id="textInput" type="text" placeholder="Type a message">
-      <input id="fileInput" type="file" hidden>
-      <button id="fileBtn">📎</button>
-      <button id="voiceBtn">🎤</button>
-      <button id="sendBtn">➤</button>
-    </footer>
+    <footer class="composer glass">
+  <input id="textInput" type="text" placeholder="Type a message...">
+  <button id="sendBtn">➤</button>
+</footer>
+
   </section>
 
   <script src="app.js"></script>
